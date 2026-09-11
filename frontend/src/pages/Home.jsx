@@ -28,7 +28,7 @@ function Home() {
         <div className="home">
             <img
                 src={imagem}
-                alt="LtStore"
+                alt="NextStore"
                 className="imagemtelainteira"
             />
             <section className="home-beneficios">

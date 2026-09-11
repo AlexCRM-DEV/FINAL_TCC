@@ -134,7 +134,7 @@ function Login() {
         <main className="login">
             <div className="login-container">
                 <div className="login-header">
-                    <h1>LtStore</h1>
+                    <h1>NextStore</h1>
                     <p>
                         Entre na sua conta
                     </p>

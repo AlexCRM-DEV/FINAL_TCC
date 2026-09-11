@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/Ltstore.png";
+import logo from "../assets/NextStore.png";
 import "./Header.css";
 
 function Header() {
@@ -29,7 +29,7 @@ function Header() {
             <div className="header-container">
                 <img
                     src={logo}
-                    alt="LtStore"
+                    alt="NextStore"
                     className="logo"
                 />  
                 <div className="header-usuario">

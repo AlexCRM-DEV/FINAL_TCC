@@ -3,126 +3,186 @@
 .login {
     width: 100%;
     min-height: 100vh;
-    background: #f3f4f6;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #DCEEF7 0%,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #F4F8FB 0%,
+            #E8F3F8 50%,
+            #D5E8F2 100%
+        );
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 30px;
+
     box-sizing: border-box;
+
     font-family: "Poppins", sans-serif;
 }
 
 .login-container {
     width: 100%;
     max-width: 450px;
-    background: #ffffff;
-    border: 2px solid #33095a;
-    border-radius: 14px;
-    padding: 35px;
+
+    background: #FFFFFF;
+
+    border: 2px solid #0B405F;
+
+    border-radius: 16px;
+
+    padding: 38px;
+
     box-sizing: border-box;
+
     box-shadow:
-        0 8px 25px rgba(31, 111, 235, 0.12);
+        0 18px 45px rgba(3, 31, 49, 0.15);
 }
 
 .login-header {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .login-header h1 {
     margin: 0 0 8px;
-    color: #17212b;
-    font-size: 32px;
+
+    color: #031F31;
+
+    font-size: 34px;
     font-weight: 800;
-    letter-spacing: -0.5px;
+
+    letter-spacing: -0.8px;
 }
 
 .login-header p {
     margin: 0;
-    color: #6b7280;
+
+    color: #60788A;
+
     font-size: 14px;
-    font-weight: 400;
 }
 
 .login-erro {
     width: 100%;
+
     padding: 12px 14px;
+
     margin-bottom: 20px;
+
     box-sizing: border-box;
-    background: #fff1f2;
-    border: 1px solid #f5c2c7;
+
+    background: #FFF1F2;
+
+    border: 1px solid #F5C2C7;
+
     border-radius: 8px;
-    color: #b02a37;
+
+    color: #B02A37;
+
     font-size: 13px;
     font-weight: 600;
+
     text-align: center;
 }
 
 .login-form {
     width: 100%;
+
     display: flex;
     flex-direction: column;
+
     gap: 18px;
 }
 
 .login-campo {
     width: 100%;
+
     display: flex;
     flex-direction: column;
+
     gap: 7px;
 }
 
 .login-campo label {
-    color: #17212b;
+    color: #08263A;
+
     font-size: 14px;
     font-weight: 600;
 }
 
 .login-campo input {
     width: 100%;
-    height: 46px;
+    height: 48px;
+
     padding: 0 14px;
+
     box-sizing: border-box;
-    border: 1px solid #ccd5df;
+
+    border: 1px solid #B8CFDD;
+
     border-radius: 8px;
+
     outline: none;
-    background: #ffffff;
-    color: #17212b;
+
+    background: #FFFFFF;
+
+    color: #08263A;
+
     font-family: "Poppins", sans-serif;
+
     font-size: 14px;
+
     transition:
         border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
+        box-shadow 0.2s ease;
 }
 
 .login-campo input::placeholder {
-    color: #9ca3af;
+    color: #8FA6B6;
 }
 
 .login-campo input:focus {
-    border-color: #33095a;
+    border-color: #236F9F;
+
     box-shadow:
-        0 0 0 3px rgba(31, 111, 235, 0.10);
+        0 0 0 3px rgba(35, 111, 159, 0.15);
 }
 
 .login-campo input:disabled {
-    background: #f3f4f6;
+    background: #EEF4F8;
+
     cursor: not-allowed;
 }
 
 .login-form button[type="submit"] {
     width: 100%;
-    height: 46px;
-    margin-top: 4px;
+    height: 48px;
+
+    margin-top: 5px;
+
     border: none;
+
     border-radius: 8px;
-    background: #33095a;
-    color: #ffffff;
+
+    background: #031F31;
+
+    color: #FFFFFF;
+
     font-family: "Poppins", sans-serif;
+
     font-size: 14px;
     font-weight: 700;
+
     cursor: pointer;
+
     transition:
         background 0.2s ease,
         transform 0.2s ease,
@@ -130,10 +190,12 @@
 }
 
 .login-form button[type="submit"]:hover {
-    background: #33095a;
+    background: #0B405F;
+
     transform: translateY(-1px);
+
     box-shadow:
-        0 5px 12px rgba(31, 111, 235, 0.25);
+        0 7px 18px rgba(3, 31, 49, 0.25);
 }
 
 .login-form button[type="submit"]:active {
@@ -141,40 +203,53 @@
 }
 
 .login-form button[type="submit"]:disabled {
-    background: #9ca3af;
+    background: #8FA6B6;
+
     cursor: not-allowed;
+
     transform: none;
+
     box-shadow: none;
 }
 
 .login-cadastro {
     margin-top: 25px;
+
     padding-top: 22px;
-    border-top: 1px solid #e5e7eb;
+
+    border-top: 1px solid #D9E5EC;
+
     text-align: center;
 }
 
 .login-cadastro p {
     margin: 0 0 10px;
-    color: #6b7280;
+
+    color: #60788A;
+
     font-size: 13px;
 }
 
 .login-cadastro button {
     padding: 0;
+
     border: none;
+
     background: transparent;
-    color: #33095a;
+
+    color: #124D73;
+
     font-family: "Poppins", sans-serif;
+
     font-size: 14px;
     font-weight: 700;
+
     cursor: pointer;
-    transition:
-        color 0.2s ease;
 }
 
 .login-cadastro button:hover {
-    color: #33095a;
+    color: #031F31;
+
     text-decoration: underline;
 }
 
@@ -195,5 +270,4 @@
     .login-header h1 {
         font-size: 28px;
     }
-
 }
