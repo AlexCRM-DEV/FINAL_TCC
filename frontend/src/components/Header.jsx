@@ -21,29 +21,31 @@ function Header() {
     function sair() {
         localStorage.removeItem("usuario");
         navigate("/");
-
     }
 
     return (
         <header className="header">
             <div className="header-container">
+
                 <img
                     src={logo}
                     alt="NextStore"
                     className="logo"
-                />  
+                />
+
                 <div className="header-usuario">
+
                     <div className="header-usuario-info">
+
                         <div className="header-avatar">
                             {usuario?.nome
-                                ? usuario.nome
-                                    .charAt(0)
-                                    .toUpperCase()
+                                ? usuario.nome.charAt(0).toUpperCase()
                                 : "U"
                             }
                         </div>
 
                         <div className="header-usuario-texto">
+
                             <span>
                                 Olá,
                             </span>
@@ -51,22 +53,24 @@ function Header() {
                             <strong>
                                 {usuario?.nome || "Usuário"}
                             </strong>
+
                         </div>
+
                     </div>
 
                     <button
                         className="header-botao-sair"
                         onClick={sair}
                     >
-                        <span>
-                            ↪
-                        </span>
+                        <span>↪</span>
                         Sair
                     </button>
+
                 </div>
+
             </div>
         </header>
     );
 }
 
-export default Header;
+export default Header;  

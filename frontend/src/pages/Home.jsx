@@ -39,11 +39,11 @@ function Home() {
                                 →
                             </div>
                             <h3>
-                                Entrega rápida
+                                Velocidade de entrega
                             </h3>
                             <p>
-                                Enviamos seus produtos com
-                                agilidade e segurança.
+                                Entregamos seus produtos com
+                                segurança e agilidade.
                             </p>
                         </div>
                         <div className="beneficio">
@@ -51,10 +51,10 @@ function Home() {
                                 ✓
                             </div>
                             <h3>
-                                Compra segura
+                                Compre com segurança
                             </h3>
                             <p>
-                                Seus dados protegidos durante
+                                Segurança de seus dados durante
                                 toda a compra.
                             </p>
                         </div>

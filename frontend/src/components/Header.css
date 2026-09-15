@@ -30,10 +30,11 @@
 }
 
 .logo {
-    width: 240px;
-    height: 90px;
+    width: 120px;
+    height: 70px;
 
     object-fit: contain;
+    object-position: center;
 
     display: block;
 
