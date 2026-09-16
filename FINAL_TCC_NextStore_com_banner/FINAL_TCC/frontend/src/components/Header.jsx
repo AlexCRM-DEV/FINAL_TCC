@@ -1,0 +1,76 @@
+import { useNavigate } from "react-router-dom";
+import logo from "../assets/NextStore.png";
+import "./Header.css";
+
+function Header() {
+
+    const navigate = useNavigate();
+
+    const usuarioSalvo = localStorage.getItem("usuario");
+
+    let usuario = null;
+
+    if (usuarioSalvo) {
+        try {
+            usuario = JSON.parse(usuarioSalvo);
+        } catch (error) {
+            console.error("Erro ao carregar usuário:", error);
+        }
+    }
+
+    function sair() {
+        localStorage.removeItem("usuario");
+        navigate("/");
+    }
+
+    return (
+        <header className="header">
+            <div className="header-container">
+
+                <img
+                    src={logo}
+                    alt="NextStore"
+                    className="logo"
+                />
+
+                <div className="header-usuario">
+
+                    <div className="header-usuario-info">
+
+                        <div className="header-avatar">
+                            {usuario?.nome
+                                ? usuario.nome.charAt(0).toUpperCase()
+                                : "U"
+                            }
+                        </div>
+
+                        <div className="header-usuario-texto">
+
+                            <span>
+                                Olá,
+                            </span>
+
+                            <strong>
+                                {usuario?.nome || "Usuário"}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <button
+                        className="header-botao-sair"
+                        onClick={sair}
+                    >
+                        <span>↪</span>
+                        Sair
+                    </button>
+
+                </div>
+
+            </div>
+        </header>
+    );
+}
+
+export default Header;  

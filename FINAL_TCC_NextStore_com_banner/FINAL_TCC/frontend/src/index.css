@@ -1,0 +1,283 @@
+:root {
+    --sky: #8DB9D5;
+    --arctic: #6FA2C2;
+    --azure: #4D8DB5;
+    --cerulean: #236F9F;
+    --cornflower: #1C5B86;
+    --cobalt: #124D73;
+    --ocean: #0B405F;
+    --teal: #07364F;
+    --navy: #052D45;
+    --midnight: #031F31;
+
+    --background: #F4F8FB;
+    --background-blue: #EAF3F8;
+
+    --white: #FFFFFF;
+
+    --text: #08263A;
+    --text-light: #60788A;
+
+    --border: #C7D9E5;
+    --border-light: #DCEAF2;
+
+    --danger: #DC3545;
+    --success: #198754;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================================
+   IDENTIDADE VISUAL NEXTSTORE
+   ================================ */
+
+.home,
+.produtos,
+.pedidos,
+.carrinho,
+.cadastro-produto,
+.editar-produto {
+    background: var(--background);
+}
+
+/* Títulos */
+
+.home-titulo h2,
+.produtos-titulo h1,
+.pedidos-header h1,
+.carrinho-container > h1,
+.cadastro-header h1,
+.editar-header h1 {
+    color: var(--text);
+}
+
+/* Textos */
+
+.home-titulo p,
+.produtos-titulo p,
+.pedidos-header p,
+.carrinho-vazio p,
+.cadastro-header p,
+.editar-header p {
+    color: var(--text-light);
+}
+
+/* Cards gerais */
+
+.categoria-home-card,
+.beneficio,
+.produto-card,
+.carrinho-vazio,
+.carrinho-item,
+.carrinho-total,
+.pedidos-vazio,
+.pedido-card,
+.cadastro-form,
+.cadastro-usuario-container,
+.editar-container {
+    border-color: var(--border);
+}
+
+/* Hover dos cards */
+
+.categoria-home-card:hover,
+.beneficio:hover,
+.produto-card:hover,
+.pedido-card:hover {
+    border-color: var(--cerulean);
+}
+
+/* Botões principais */
+
+.banner-botao,
+.botao-comprar,
+.botao-cadastrar,
+.botao-criar-conta,
+.botao-salvar,
+.produtos-status button,
+.pedidos-status button,
+.pedidos-vazio button {
+    background: var(--midnight);
+}
+
+.banner-botao:hover,
+.botao-comprar:hover,
+.botao-cadastrar:hover,
+.botao-criar-conta:hover,
+.botao-salvar:hover,
+.produtos-status button:hover,
+.pedidos-status button:hover,
+.pedidos-vazio button:hover {
+    background: var(--ocean);
+}
+
+/* Inputs */
+
+.campo input:focus,
+.campo textarea:focus,
+.cadastro-usuario-campo input:focus,
+.editar-campo input:focus,
+.editar-campo textarea:focus {
+    border-color: var(--cerulean);
+    box-shadow: 0 0 0 3px rgba(35, 111, 159, 0.12);
+}
+
+/* Preços e destaques */
+
+.produto-info strong,
+.carrinho-item p,
+.pedido-topo > strong,
+.pedido-final strong {
+    color: var(--cobalt);
+}
+
+/* Tags */
+
+.produto-info > span {
+    background: #E8F2F8;
+    color: var(--cobalt);
+}
+
+/* Bordas e áreas claras */
+
+.preview,
+.editar-preview,
+.pedido-produto,
+.pedido-gerente-acoes {
+    border-color: var(--border-light);
+    background: #F7FBFD;
+}
+
+/* Botão editar */
+
+.botao-editar {
+    border-color: var(--cerulean);
+    color: var(--cerulean);
+}
+
+.botao-editar:hover {
+    background: var(--cerulean);
+    color: #ffffff;
+}
+
+/* Quantidade */
+
+.quantidade {
+    border-color: var(--border);
+}
+
+.quantidade button {
+    background: #EDF4F8;
+    color: var(--text);
+}
+
+.quantidade button:hover {
+    background: #D9E9F2;
+    color: var(--cobalt);
+}
+
+/* Botão voltar */
+
+.botao-voltar-login {
+    color: var(--cobalt);
+    border-color: var(--border);
+}
+
+.botao-voltar-login:hover {
+    background: #EDF6FA;
+    border-color: var(--cerulean);
+}
+
+/* Status enviado */
+
+.status-enviado {
+    background: #E8F2F8;
+    color: var(--cobalt);
+    border-color: var(--cerulean);
+}
+
+.ativo-enviado {
+    background: var(--cobalt);
+    border-color: var(--cobalt);
+    color: #ffffff;
+}
+
+/* Ícones da Home */
+
+.beneficio-icone {
+    background: #E8F2F8;
+    border-color: var(--cerulean);
+    color: var(--cobalt);
+}
+
+/* Imagens */
+
+.produto-imagem {
+    background: #F1F7FA;
+    border-bottom-color: var(--border-light);
+}
+
+.carrinho-item img,
+.editar-preview img,
+.pedido-produto img {
+    border-color: var(--border-light);
+}
+
+/* Cancelar */
+
+.botao-cancelar {
+    border-color: var(--border);
+    color: var(--text-light);
+}
+
+.botao-cancelar:hover {
+    background: #EDF4F8;
+    border-color: var(--arctic);
+}
+
+/* Rodapé */
+
+.footer {
+    background: var(--midnight);
+}
+
+/* ================================
+   RESPONSIVIDADE
+   ================================ */
+
+img {
+    max-width: 100%;
+}
